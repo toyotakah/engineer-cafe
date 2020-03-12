@@ -33,38 +33,47 @@ function myFunction() {
   switch(area){
     case '集中スペース１':
       var calendar = con1Cal;
+      var areaName = '1. ';
       break;
      
     case '集中スペース２':
       var calendar = con2Cal;
+      var areaName = '2. ';
       break;
      
     case '集中スペース３':
       var calendar = con3Cal;
+      var areaName = '3. ';
       break;
      
     case '集中スペース４':
       var calendar = con4Cal;
+      var areaName = '4. ';
       break;
      
     case '集中スペース５':
       var calendar = con5Cal;
+      var areaName = '5. ';
       break;
      
     case '集中スペース６':
       var calendar = con6Cal;
+      var areaName = '6. ';
       break;
      
     case 'underスペース':
       var calendar = undCal;
+      var areaName = 'Und. ';
       break;
      
     case 'ミーティングスペース':
       var calendar = mtgCal;
+      var areaName = 'Mtg. ';
       break;
      
-    case "MAKER'Sスペース":
+    case "MAKERSスペース":
       var calendar = mksCal;
+      var areaName = 'Mks. ';
       break;
      
     default:
@@ -72,5 +81,5 @@ function myFunction() {
   }
  
   //カレンダー自動登録
-  calendar.createEvent(name+"様", new Date(startDate), new Date(endDate));
+  calendar.createEvent(areaName+name+"様", new Date(startDate), new Date(endDate));
 }
